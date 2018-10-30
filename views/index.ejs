@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+      <title><%= title %></title>
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="all" />
+      <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" media="all" />
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-grid.min.css" media="all" />
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-reboot.min.css" media="all" />
+      <link rel="stylesheet" type="text/css" href="assets/css/font-techmarket.css" media="all" />
+      <link rel="stylesheet" type="text/css" href="assets/css/slick.css" media="all" />
+      <link rel="stylesheet" type="text/css" href="assets/css/techmarket-font-awesome.css" media="all" />
+      <link rel="stylesheet" type="text/css" href="assets/css/slick-style.css" media="all" />
+      <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css" media="all" />
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
+      <link rel="stylesheet" type="text/css" href="assets/css/colors/blue.css" media="all" />
+      
+      <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,900" rel="stylesheet">
+      <link rel="shortcut icon" href="assets/images/fav-icon.png">
+
+      <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+      <script type="text/javascript" src="assets/js/tether.min.js"></script>
+      <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="assets/js/jquery-migrate.min.js"></script>
+      <script type="text/javascript" src="assets/js/hidemaxlistitem.min.js"></script>
+      <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+      <script type="text/javascript" src="assets/js/hidemaxlistitem.min.js"></script>
+      <script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+      <script type="text/javascript" src="assets/js/scrollup.min.js"></script>
+      <script type="text/javascript" src="assets/js/jquery.waypoints.min.js"></script>
+      <script type="text/javascript" src="assets/js/waypoints-sticky.min.js"></script>
+      <script type="text/javascript" src="assets/js/pace.min.js"></script>
+      <script type="text/javascript" src="assets/js/slick.min.js"></script>
+      <script type="text/javascript" src="assets/js/scripts.js"></script>
+
+    </head>
+    <body class="woocommerce-active page-template-template-homepage-v2 can-uppercase">
+      <div id="page" class="hfeed site">
+        <%- include partials/topbar.ejs %>
+        
+        <header id="masthead" class="site-header header-v1" style="background-image: none; ">
+          <div class="col-full desktop-only">
+            <%- include partials/menu.ejs %>
+            <%- include partials/sidebar.ejs %>  
+          </div> <!-- .col-full -->
+          <%- include partials/mobile-menu.ejs %>
+        </header> <!-- .header-v1 -->
+        <!-- ============================================================= Header End ============================================================= -->
+
+        <div id="content" class="site-content" tabindex="-1">
+            <div class="col-full">
+                <div class="row">
+                  <div id="primary" class="content-area">
+                    <main id="main" class="site-main">
+                      <!-- ================= slider block ================= -->
+                      <%- include partials/slider.ejs %>
+                      <!-- ================= section-top-categories ================= -->
+                      <%- include partials/top-cat.ejs %>
+                      <!-- ================= section-daily-deal ================= -->
+                      <%- include partials/dailydeal.ejs %>
+                      
+                      <div class="fullwidth-notice stretch-full-width">
+                        <div class="col-full">
+                          <p class="message">Download our new app today! Dont miss our mobile-only offers and shop with Android Play.</p>
+                        </div> <!-- .col-full -->
+                      </div> <!-- .fullwidth-notice -->
+
+                      <!-- ================= section-banner-middle ================= -->
+                      <%- include partials/banner-middle.ejs %>
+                      <!-- ================= section-new-arrival ================= -->
+                      <%- include partials/new-arrival.ejs %>
+                      <!-- ================= section-special-offers ================= -->
+                      <%- include partials/special-offers.ejs %>
+                      <!-- ================= section-trending-now ================= -->
+                      <%- include partials/trending-now.ejs %>
+
+                      <div class="banner full-width-banner">
+                        <a href="shop.html">
+                          <div style="background-size: cover; background-position: center center; background-image: url( assets/images/banner/full-width.png ); height: 236px;" class="banner-bg">
+                            <div class="caption">
+                              <div class="banner-info">
+                                <h3 class="title">
+                                  <strong>Extremely Portable</strong>, learn
+                                  <br> to ride in just 3 minutes</h3>
+                                <h4 class="subtitle">Travel up to 22km in a single charge</h4>
+                              </div>
+                              <span class="banner-action button">Browse now
+                                <i class="feature-icon d-flex ml-4 tm tm-long-arrow-right"></i>
+                              </span>
+                            </div><!-- /.caption -->
+                          </div><!-- /.banner-b -->
+                        </a><!-- /.section-header -->
+                      </div><!-- /.banner -->
+
+                      <!-- ================= section-dream ================= -->
+                      <%- include partials/dream.ejs %>
+                      <!-- ================= section-handpickforyou ================= -->
+                      <%- include partials/handpick.ejs %>
+                      <!-- ================= section-branding-list ================= -->
+                      <%- include partials/branding-list.ejs %>
+                      <!-- ================= section-recent-view ================= -->
+                      <%- include partials/recent.ejs %>
+
+                    </main> <!-- .end #main-->
+                  </div> <!-- .end #primary-->
+                </div><!-- .end .row-->
+            </div> <!-- .end .col-full-->
+        </div> <!-- .end #content .site-content-->
+        <!-- ================= section-footer ================= -->
+        <%- include partials/footer.ejs %>
+      </div> <!-- .end #page-->
+    </body>
+  </html>
